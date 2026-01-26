@@ -16,9 +16,9 @@ Accurate geospatial transformations
 
 Professional-grade satellite tracking similar to NASA/NORAD systems
 
-This system uses authentic orbital mechanics, real TLE data, and industry-standard algorithms to simulate satellite motion with high accuracy.
+### This system uses authentic orbital mechanics, real TLE data, and industry-standard algorithms to simulate satellite motion with high accuracy.
 
-🧠 Domains & Applications
+## 🧠 Domains & Applications
 
 Aerospace Software Engineering
 
@@ -34,9 +34,9 @@ Predictive Modeling
 
 GEOINT / ISR (non-classified)
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-Frontend
+## Frontend
 
 React + Vite
 
@@ -64,8 +64,8 @@ ECI / ECEF / LLA transformations
 
 GMST & sidereal time calculations
 
-🔭 Core Features
-1. Orbital Data Interpretation
+### 🔭 Core Features
+## 1. Orbital Data Interpretation
 
 Parse and validate TLEs
 
@@ -85,7 +85,7 @@ Mean motion
 
 Display satellite metadata
 
-2. Orbit Propagation (SGP4)
+## 2. Orbit Propagation (SGP4)
 
 Convert TLE → satrec
 
@@ -97,7 +97,7 @@ Accuracy decay handling
 
 ECI / ECEF coordinate support
 
-3. Geospatial Transformation
+## 3. Geospatial Transformation
 
 ECI → ECEF → Geodetic conversion
 
@@ -107,7 +107,7 @@ Sub-satellite point projection
 
 Local sidereal time (GMST)
 
-4. Pass Prediction
+## 4. Pass Prediction
 
 AOS / LOS detection
 
@@ -119,7 +119,7 @@ Look angles (azimuth, elevation, range)
 
 Elevation masking support
 
-5. Visualization
+## 5. Visualization
 🌍 2D (Leaflet)
 
 Real-time ground track
@@ -144,7 +144,7 @@ Camera follow mode
 
 Time-dynamic rendering
 
-6. Performance Optimization
+## 6. Performance Optimization
 
 Web Workers for propagation
 
@@ -167,13 +167,13 @@ Pass Prediction Engine
      ↓
 Visualization Layer (2D / 3D)
 
-🚀 Installation & Setup
+### 🚀 Installation & Setup
 git clone https://github.com/Bidhan33/Satellite-orbit-predection.git
 cd Satellite-orbit-predection
 npm install
 npm run dev
 
-🧪 Possible Extensions
+### 🧪 Possible Extensions
 
 Orbit decay prediction
 
@@ -189,7 +189,7 @@ GPU-accelerated propagation
 
 Batch SGP4 processing
 
-💼 Professional Impact
+### 💼 Professional Impact
 
 This project demonstrates:
 
@@ -211,13 +211,13 @@ NORAD control displays
 
 ESA/ISRO scheduling tools
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Bidhan Adhikari
 Software Engineer | Full-Stack Developer | Aerospace Software Enthusiast
 GitHub: @Bidhan33
 
-🏁 Status
+## 🏁 Status
 
 🚧 Active Development – Full-stack integration in progress
 ✅ Frontend tracking system implemented
