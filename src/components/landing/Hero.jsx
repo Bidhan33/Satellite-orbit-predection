@@ -2,7 +2,7 @@ import { Satellite, ChevronRight, Activity, Navigation } from "lucide-react";
 import GlassCard from "../ui/GlassCard";
 import Badge from "../ui/Badge";
 
-const Hero = ({ onGetStarted }) => {
+const Hero = ({ onGetStarted, onOrbitPrediction }) => {
   return (
     <div className="relative min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
       {/* Background Glow */}
@@ -50,8 +50,15 @@ const Hero = ({ onGetStarted }) => {
             onClick={onGetStarted}
             className="group bg-white text-black px-10 py-5 rounded-full text-sm font-black uppercase tracking-widest hover:bg-[#8b5cf6] hover:text-white transition-all flex items-center shadow-2xl"
           >
-            Start Real-Time Tracking
+            Live Satellite List
             <ChevronRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </button>
+          <button 
+            onClick={onOrbitPrediction}
+            className="group bg-[#8b5cf6] text-white px-10 py-5 rounded-full text-sm font-black uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center shadow-2xl border-2 border-[#8b5cf6]"
+          >
+            Orbit Prediction
+            <Navigation className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
 

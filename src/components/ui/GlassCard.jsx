@@ -6,10 +6,11 @@ const variants = {
 
 const GlassCard = ({ children, className = "", variant = "dark" }) => {
   return (
-    <div className={`${variants[variant]} rounded-[2rem] transition-all duration-300 ${className}`}>
+    <div className={`${variants[variant]} rounded-4xl transition-all duration-300 ${className}`}>
       {children}
     </div>
   );
 };
 
 export default GlassCard;
+export { GlassCard };

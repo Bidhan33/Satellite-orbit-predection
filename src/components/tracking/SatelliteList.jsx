@@ -12,6 +12,7 @@ import {
 import GlassCard from '../ui/GlassCard';
 import Badge from '../ui/Badge';
 import StatisticsPanel from './StatisticsPanel';
+import { fetchSatellitesFromCelesTrak } from '../../services/apiService';
 import '../styles/satelliteListAnimations.css';
 
 const SatelliteList = ({ onBack, onSelectSatellite }) => {
@@ -28,10 +29,6 @@ const SatelliteList = ({ onBack, onSelectSatellite }) => {
       setLoading(true);
       setError(null);
 
-      const { fetchSatellitesFromCelesTrak } = await import(
-        '../../services/satelliteApiService'
-      );
-
       let group = 'stations';
 
       if (selectedCategory === 'communication') group = 'starlink';
@@ -43,21 +40,11 @@ const SatelliteList = ({ onBack, onSelectSatellite }) => {
       // ❗ NEVER fetch "all" from API
       const rawData = await fetchSatellitesFromCelesTrak(group, 30);
 
-      // ✅ Enrich locally (cheap + instant)
-      const enriched = rawData.map((sat, index) => ({
+      // ✅ Data now includes real launch dates and orbital elements
+      const enriched = rawData.map((sat) => ({
         ...sat,
         category: selectedCategory === 'all' ? 'other' : selectedCategory,
         status: 'active',
-
-        // Lightweight fake-but-realistic values
-        altitude: 380 + (index % 5) * 20,
-        velocity: 7.6,
-        period: 92 + index,
-        inclination: 51.6,
-
-        launchDate: '2000-01-01',
-        // Image is now provided by the API service
-        image: sat.image,
       }));
 
       setSatellites(enriched);
