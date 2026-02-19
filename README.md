@@ -165,7 +165,7 @@ Geospatial Transformation
      ↓
 Pass Prediction Engine
      ↓
-Visualization Layer (2D / 3D)
+Visualization Layer (2D )
 
 ### 🚀 Installation & Setup
 git clone https://github.com/Bidhan33/Satellite-orbit-predection.git
@@ -177,9 +177,6 @@ npm run dev
 
 Orbit decay prediction
 
-Atmospheric drag modeling
-
-Solar radiation pressure
 
 Multi-satellite simulation
 
@@ -207,9 +204,6 @@ Comparable to:
 
 NASA real-time trackers
 
-NORAD control displays
-
-ESA/ISRO scheduling tools
 
 ## 👨‍💻 Author
 
