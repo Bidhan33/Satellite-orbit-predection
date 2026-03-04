@@ -1,4 +1,4 @@
-import { Satellite, Twitter, Github, Zap } from "lucide-react";
+import { Satellite, Twitter, Github, Zap, Facebook } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -59,6 +59,10 @@ const Footer = () => {
             <div className="w-10 h-10 bg-[#141414] rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all cursor-pointer">
               <Github className="w-4 h-4" />
             </div>
+             <div className="w-10 h-10 bg-[#141414] rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all cursor-pointer">
+              <Facebook className="w-4 h-4" />
+            </div>
+            
           </div>
         </div>
       </div>
